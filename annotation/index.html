@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Fail</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+<h1 id="title">Fail</h1>
+
+<video src="https://www.cs.tufts.edu/comp/20/fail.mp4" id="failvideo" controls></video>
+<div id="lyrics"></div>
+
+<script>
+	video = document.getElementById("failvideo");
+	subtitle = document.getElementById("lyrics");
+	function modifyText() {
+		if (video.currentTime > 9 && video.currentTime <= 13) {
+			subtitle.innerHTML = "You've got me feelin' emotions";
+		} else if (video.currentTime > 13 && video.currentTime <= 17) {
+			subtitle.innerHTML = "Deeper than I've ever dreamed of";
+		} else if (video.currentTime > 17 && video.currentTime <= 21) {
+			subtitle.innerHTML = "You've got me feelin' emotions";
+		} else if (video.currentTime > 21 && video.currentTime <= 25) {
+			subtitle.innerHTML = "Higher than the heavens above";
+		} else if (video.currentTime > 25 && video.currentTime <= 29) {
+			subtitle.innerHTML = "I feel good, I feel nice";
+		} else if (video.currentTime > 29 && video.currentTime <= 33) {
+			subtitle.innerHTML = "I've never felt so satisfied";
+		} else if (video.currentTime > 33 && video.currentTime <= 37) {
+			subtitle.innerHTML = "I'm in love, I'm alive";
+		} else if (video.currentTime > 37 && video.currentTime <= 41) {
+			subtitle.innerHTML = "Intoxicated, flyin' high";
+		} else if (video.currentTime > 43 && video.currentTime <= 47) {
+			subtitle.innerHTML = "Feels like a dream";
+		} else if (video.currentTime > 47 && video.currentTime <= 51) {
+			subtitle.innerHTML = "When you touch me tenderly";
+		} else if (video.currentTime > 51 && video.currentTime <= 55) {
+			subtitle.innerHTML = "I don't know if it's real";
+		} else if (video.currentTime > 55 && video.currentTime <= 59) {
+			subtitle.innerHTML = "But I like the way I feel inside";
+		} else if (video.currentTime > 59 && video.currentTime <= 63) {
+			subtitle.innerHTML = "You've got me feelin' emotions";
+		} else if (video.currentTime > 63 && video.currentTime <= 67) {
+			subtitle.innerHTML = "Deeper than I've ever dreamed of";
+		} else if (video.currentTime > 67 && video.currentTime <= 71) {
+			subtitle.innerHTML = "You've got me feelin' emotions";
+		} else if (video.currentTime > 71 && video.currentTime <= 75) {
+			subtitle.innerHTML = "Higher than the heavens above";
+		} else {
+			subtitle.innerHTML = '"Emotion" -- Mariah Carey';
+		}
+	}
+	video.addEventListener('timeupdate', modifyText);
+</script>
+</body>
+</html>	
