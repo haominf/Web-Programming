@@ -6,23 +6,23 @@ body {
 }
 
 h1 {
-	color: black;
-	font-size: 56px;
-	font-family: sans-serif;
-	text-align: center;
+        color: black;
+        font-size: 56px;
+        font-family: sans-serif;
+        text-align: center;
 }
 
 #failvideo {
-	display: block;
-	margin: 0 auto;
-	height: 70%;
-	width: 70%;
+        display: block;
+        margin: 0 auto;
+        height: 70%;
+        width: 70%;
 }
 
 #lyrics {
-	color: black;
-	font-family: American Typewriter;
-	text-align: center;
-	font-size: 30px;
-	margin-top: 50px;
+        color: black;
+        font-family: American Typewriter;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
 }
