@@ -12,7 +12,9 @@ The required JSON API, a third-party Javascript API (Google Maps), the HTML5 geo
 * All the files passed the validator
 
 ###Acknowledgement
-I finished all the work by myself. But I used StackOverflow for help a lot.
+I finished all the work by myself. 
+However, I used StackOverflow for help a lot. And I used the JavaScript implementation of the Haversine Formula on Stasck Overflow.
+link: http://stackoverflow.com/questions/14560999/using-the-haversine-formula-in-javascript.
 
 ###Hours spent
 Approximately 7 hours.
