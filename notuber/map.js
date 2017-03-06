@@ -78,7 +78,7 @@ function connect_database(username, mylat, mylng)
 function render_OthersLocation(info, pic) 
 {
 	var others = new google.maps.LatLng(info["lat"], info["lng"]);
-	marker = new google.maps.Marker({
+	var marker = new google.maps.Marker({
 		position: others,
 		icon: pic
 	});
