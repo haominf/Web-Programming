@@ -3,7 +3,7 @@ var myLng = 0;
 var request = new XMLHttpRequest();
 var me = new google.maps.LatLng(myLat, myLng);
 var myOptions =  {
-	zoom: 13,
+	zoom: 18,
 	center: me,
 	mapTypeId: google.maps.MapTypeId.ROADMAP
 };
@@ -23,7 +23,6 @@ function getMyLocation()
 		navigator.geolocation.getCurrentPosition(function(position) {
 			myLat = position.coords.latitude; 	
 			myLng = position.coords.longitude;
-			render_MyLocation();
 			connect_database("s4lIFLCg", myLat, myLng);
 		});
 	}
@@ -32,14 +31,14 @@ function getMyLocation()
 	}
 }
 
-function render_MyLocation()
+function render_MyLocation(image)
 {
 	me = new google.maps.LatLng(myLat, myLng);
 	map.panTo(me);
 	marker = new google.maps.Marker({
 		position: me,
 		title: "I'm here!",
-		icon: "me.png"
+		icon: image
 	});
 	marker.setMap(map);
 
@@ -60,14 +59,16 @@ function connect_database(username, mylat, mylng)
 			parsed = JSON.parse(data);
 			if (parsed["vehicles"]) {
 				for (i = 0; i < parsed["vehicles"].length; i++) {
-					var pic = "black_car.png";
-					render_OthersLocation(parsed["vehicles"][i], pic);
+					var Otherspic = "black_car.png";
+					render_MyLocation("me.png");
+					render_OthersLocation(parsed["vehicles"][i], Otherspic);
 				}
 			}
 			if (parsed["passengers"]) {
 				for (i = 0; i < parsed["passengers"].length; i++) {
-					var pic = "passenger.png";
-					render_OthersLocation(parsed["passengers"][i], pic);
+					var Otherspic = "passenger.png";
+					render_MyLocation("black_car.png");
+					render_OthersLocation(parsed["passengers"][i], Otherspic);
 				}
 			}
 		}
@@ -107,3 +108,4 @@ function calculate_distance(lat, lng)
 
 	return d;
 }
+
