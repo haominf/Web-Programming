@@ -9,7 +9,7 @@ The required html file has been correctly implemented, which follows:
 * No document.getElementById() is used
 
 ###Acknowledgement
-I finished the work with help of StackOverflow and Ming's lecture notes. 
+I finished all the work with the help of StackOverflow and Ming's lecture notes. 
 Credit to StackOverflow: http://stackoverflow.com/questions/8951810/how-to-parse-json-data-with-jquery-javascript
 
 ###Hours spent
