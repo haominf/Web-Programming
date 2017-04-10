@@ -23,6 +23,7 @@ function getMyLocation()
 		navigator.geolocation.getCurrentPosition(function(position) {
 			myLat = position.coords.latitude; 	
 			myLng = position.coords.longitude;
+			render_MyLocation("me.png");
 			connect_database("s4lIFLCg", myLat, myLng);
 		});
 	}
@@ -50,7 +51,7 @@ function render_MyLocation(image)
 
 function connect_database(username, mylat, mylng)
 {
-	request.open("POST", "https://defense-in-derpth.herokuapp.com/submit", true);
+	request.open("POST", "https://fathomless-peak-98846.herokuapp.com/submit", true);
 	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     
 	request.onreadystatechange = function () {
