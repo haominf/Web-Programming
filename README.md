@@ -1,4 +1,4 @@
-1. hat is this purpose of this Git repository? 
+1. What is this purpose of this Git repository? 
 
 	This is for a collection of homework for Ming Chow's course of COMP20 Web Programming at Tufts.
 
@@ -19,4 +19,4 @@
 
 5. Now that you have finished the course, what topic would you like to delve deeper into?
 
-	I will be taking Security next semester so I hope I can learn about it.
+	I will be taking Security next semester so I hope I can learn more about it.
